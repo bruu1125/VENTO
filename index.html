@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    
     <title>Document</title>
+    
+    <script>
+        $(function(){
+            AOS.init();
+        })
+    </script>
 
 </head>
 <body class="preload">
@@ -58,15 +68,6 @@
             </ul>
         </header>
 
-        <!-- <nav class="index-menu">
-            <ul>
-                <li><a href="#">00</a></li>
-                <li><a href="#">01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
-                <li><a href="#">04</a></li>
-            </ul>
-        </nav> -->
 
         <main>
             <section class="maintop">
@@ -91,9 +92,6 @@
             <div class="contentwrap">
                     <nav class="navbox">
                         <ul>
-                            <!-- <li>
-                                <a href="#">LINE UP</a>
-                            </li> -->
                             <li>
                                 <a href="#content01">01</a>
                             </li>
@@ -119,7 +117,7 @@
                 
             <section class="lineup">
                 <div class="lineup-wrap">
-                    <div class="lineup-flexbox">
+                    <div data-aos="fade-up" data-aos-duration="1200" class="lineup-flexbox">
                         
                         <input type="radio" name="lineup" id="lineup01" checked>
                         <label for="lineup01" class="lineup01box">
@@ -171,14 +169,14 @@
 
                 <div class="cont1-inner-product">
                     <!-- <p class="con1-subtext">VENTO SOFA is Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, culpa esse sint nemo tempora.</p> -->
-                    <div class="sofa-forus">
+                    <div data-aos="fade-right" data-aos-duration="1000"   class="sofa-forus">
                         <img src="image/forus-sofa.png" alt="">
                         <a href="#" class="forus-linkbox">
                             <h3>For Us</h3>
                         </a>
                     </div>
 
-                    <div class="sofa-forme">
+                    <div data-aos="fade-left" data-aos-duration="1000"   class="sofa-forme">
                         <img src="image/forme-sofa.png" alt="">
                         <a href="#" class="forme-linkbox">
                             <h3>For Me</h3>
@@ -193,7 +191,7 @@
 
                 <div class="cont2-inner-product">
                     
-                    <div class="table-big">
+                    <div data-aos="fade-right" data-aos-duration="1000"  class="table-big">
                         <a href="#">
                             <h3 class="title-table">TABLE</h3>
                             <img src="image/table03.png" alt="">
@@ -201,7 +199,7 @@
                     </div>
                     <!-- <p class="con2-subtext">VENTO TABLE & CHAIR is Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
 
-                    <div class="chair-big">
+                    <div data-aos="fade-left" data-aos-duration="1000"  class="chair-big">
                         <a href="#">
                             <h3 class="title-chair">CHAIR</h3>
                             <img src="image/chair02.png" alt="">
@@ -217,13 +215,13 @@
                     <!-- <p class="con3-subtext">VENTO LAMPS is Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
 
                     <div class="lamp-big">
-                        <div class="lamp-floor">
+                        <div data-aos="fade-right" data-aos-duration="1000"  class="lamp-floor">
                             <a href="#">
                                 <h3>FLOOR LAMPS</h3>
                                 <img src="image/lamp03.png" alt="">
                             </a>
                         </div>
-                        <div class="lamp-celling">
+                        <div data-aos="fade-down" data-aos-duration="1000"  class="lamp-celling">
                             <a href="#">
                                 <h3>CELLING LAMPS</h3>
                                 <img src="image/lamp05.png" alt="">
@@ -231,7 +229,7 @@
                         </div>
 
                         
-                        <div class="lamp-desk">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-200" class="lamp-desk">
                             <a href="#">
                                 <h3>DESK LAMPS</h3>
                                 <img src="image/lamp07.png" alt="">
@@ -244,7 +242,7 @@
             <section class="content-4" id="content04">
                 <h1 class="title-04">04</h1>
                 <div class="cont4-inner-bgbox"></div>
-                <div class="cont4-inner-product">
+                <div data-aos="fade-up" data-aos-duration="1200"  class="cont4-inner-product">
                     <!-- <p class="con4-subtext">VENTO FABRIC is Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     <div class="bedding-big">
                         <div class="bedding-con fabric">
@@ -274,7 +272,7 @@
                 <div class="cont5-inner-bgbox"></div>
                     <div class="cont5-inner-product">
                         <!-- <p class="con5-subtext">VENTO ARTICLE is Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                        <div class="article-big">
+                        <div data-aos="fade-up" data-aos-duration="1200"  class="article-big">
                             <div class="article01 tt">
                                 <a href="#">
                                     <h3>PICTURE</h3>
@@ -319,14 +317,14 @@
                 
                 <div class="cont6-inner-contentbox">
                     <div class="cont6-inner-bgbox"></div>
-                    <div class="con6-titlebox">
+                    <div data-aos="fade-down" data-aos-duration="1200"   class="con6-titlebox">
                         <h1 class="title-06">EXCLUSIVE</h1>
                         <h2 class="subtitle-06">
                             당신의 공간에 걸맞는 품격있는 스타일링을 제안합니다.
                         </h2>
                     </div>
                     <div class="sugg-01">
-                        <div class="sugg-inner01">
+                        <div data-aos="fade-right" data-aos-duration="1200"  class="sugg-inner01">
                             <h2 class="sugg-inner-sub">Renovating</h2>
                             <img src="image/suggest03.jpg" alt="">
                             <div class="sugg-innertext">
@@ -334,7 +332,7 @@
                                 <a href="#">VIEW MORE</a>
                             </div>
                         </div>
-                        <div class="sugg-inner02">
+                        <div data-aos="fade-left" data-aos-duration="1200"  class="sugg-inner02">
                             <img src="image/suggest01.jpg" alt="">
                             <h2 class="sugg-inner-sub">Interior design</h2>
                             <div class="sugg-innertext">
@@ -342,7 +340,7 @@
                                 <a href="#">VIEW MORE</a>
                             </div>
                         </div>
-                        <div class="sugg-inner03">
+                        <div data-aos="fade-right" data-aos-duration="1200"  class="sugg-inner03">
                             <h2 class="sugg-inner-sub">Home styling</h2>
                             <img src="image/suggest02.jpg" alt="">
                             <div class="sugg-innertext">
@@ -351,7 +349,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sugg-02">
+                    <div data-aos="fade-up" data-aos-duration="1200" class="sugg-02">
                         <p>
                             오직 당신만을 위한 품격있는 홈 스타일링을 제안합니다. <br>
                             지금 바로 VENTO의 퍼스널 디렉터와 상담해보세요.                        
@@ -365,14 +363,14 @@
             <section class="content-7">
                 <!-- <h1 class="title-07">MAGAZINE</h1> -->
                 <div class="cont7-inner-bgbox"></div>
-                <div class="con7-video">
+                <div data-aos="zoom-in" data-aos-duration="1200"  class="con7-video">
                     <video src="image/con7-video.mp4" autoplay muted loop></video>
                     <p class="vidbox-text2">HIGH-END LIFESTYLE SELECT SHOP</p>
                     <img src="image/vento_logo.svg" alt="" class="vidbox-logo">
                     <!-- <p class="con7-text1">일상을 디자인하다.</p> -->
 
                 </div>
-                <div class="con7-banner">
+                <div data-aos="fade-up" data-aos-duration="1200"  class="con7-banner">
                     <div class="con7-banneritem service">
                         <a href="#">
                             <img src="image/con7-icon1.png" alt="">
@@ -407,7 +405,7 @@
             </section>
             </div>
 
-            <footer>
+            <footer data-aos="fade-in" data-aos-duration="1000" >
                 <div class="footer-left">
                     <div class="ft-logo">
                         <img src="image/vento(w)_logo.svg" alt="">
@@ -483,7 +481,6 @@
             document.querySelector('.menubox').classList.toggle('menubox-slide')
         })
 
-        // 메인 섹션네비바 스크롤하면 나타남
         window.addEventListener('scroll',function(){
             let value = window.scrollY;
             console.log(value);
@@ -491,116 +488,12 @@
             if(value > 1800) {
                 document.querySelector('.navbox').classList.add('navbox-opa');
             } 
-            if(value < 1700 || value > 9550) {
+            // if(value < 1700 || value > 7400) 
+            else{
                 document.querySelector('.navbox').classList.remove('navbox-opa');
             }
+        })
 
-            if(value > 1200) {
-                document.querySelector('.lineup-wrap').classList.add('sec3-show');
-            } 
-            // if(value < 1000 || value > 1950) 
-            else{
-                document.querySelector('.lineup-wrap').classList.remove('sec3-show');
-            }
-
-            if(value > 2400) {
-                document.querySelector('.cont1-inner-product').classList.add('sec4-show');
-            } 
-            // if(value < 1600 || value > 2400) 
-            else{
-                document.querySelector('.cont1-inner-product').classList.remove('sec4-show');
-            }
-
-            if(value > 3100) {
-                document.querySelector('.table-big').classList.add('sec5-top-show');
-            } 
-            // if(value < 2450 || value > 3250) 
-            else{
-                document.querySelector('.table-big').classList.remove('sec5-top-show');  
-            }
-            if(value > 3300) {
-                document.querySelector('.chair-big').classList.add('sec5-btm-show');
-            } 
-            // if(value < 2450 || value > 3300) 
-            else{
-                document.querySelector('.chair-big').classList.remove('sec5-btm-show');  
-            }
-
-            if(value > 4150) {
-                document.querySelector('.cont3-inner-product').classList.add('sec6-show');
-            } 
-            // if(value < 3250 || value > 3900) 
-            else{
-                document.querySelector('.cont3-inner-product').classList.remove('sec6-show');  
-            }
-
-            if(value > 5000) {
-                document.querySelector('.bedding-big').classList.add('sec7-show');
-            } 
-            // if(value < 3900 || value > 4700) 
-            else{
-                document.querySelector('.bedding-big').classList.remove('sec7-show');  
-            }
-
-            if(value > 5800) {
-                document.querySelector('.article-big').classList.add('sec8-show');
-            } 
-            // if(value < 4600 || value > 5400) 
-            else{
-                document.querySelector('.article-big').classList.remove('sec8-show');
-            }
-
-            if(value > 6800) {
-                document.querySelector('.con6-titlebox').classList.add('sec9-01-show');
-            } 
-            // if(value < 5400 || value > 6000) 
-            else{
-                document.querySelector('.con6-titlebox').classList.remove('sec9-01-show');
-            }
-
-            if(value > 7050) {
-                document.querySelector('.sugg-inner01').classList.add('sec9-top-show');
-            } 
-            // if(value < 5650 || value > 6800) 
-            else{
-                document.querySelector('.sugg-inner01').classList.remove('sec9-top-show');
-            }
-            if(value > 7250) {
-                document.querySelector('.sugg-inner02').classList.add('sec9-mid-show');
-            } 
-            // if(value < 5850 || value > 6800) 
-            else{
-                document.querySelector('.sugg-inner02').classList.remove('sec9-mid-show');
-            }
-            if(value > 7450) {
-                document.querySelector('.sugg-inner03').classList.add('sec9-btm-show');
-            } 
-            // if(value < 6050 || value > 6800) 
-            else{
-                document.querySelector('.sugg-inner03').classList.remove('sec9-btm-show');
-            }
-
-            if(value > 8050) {
-                document.querySelector('.sugg-02').classList.add('sec9-02-show');
-            } 
-            // if(value < 6350 || value > 7050) 
-            else{
-                document.querySelector('.sugg-02').classList.remove('sec9-02-show');
-            }
-
-            if(value > 8700) {
-                document.querySelector('.con7-video').classList.add('sec10-vid-show');
-            } else if(value < 8600) {
-                document.querySelector('.con7-video').classList.remove('sec10-vid-show');
-            }
-            if(value > 9200) {
-                document.querySelector('.con7-banner').classList.add('sec10-ban-show');
-            } else if(value < 9100) {
-                document.querySelector('.con7-banner').classList.remove('sec10-ban-show');
-            }
-        });
-
-        
     </script>
 </body>
 </html>
