@@ -79,7 +79,9 @@ section {
     
 }
 .logo {
-    width:160px;
+    width:15vw;
+    max-width: 140px;
+    min-width: 100px;
     position: absolute;
     top:50%;
     left:51%;
@@ -95,6 +97,8 @@ section {
     height:auto;
     display:block;
 }
+
+
 .menuicon {
     width:fit-content;
     height:50px;
@@ -320,7 +324,14 @@ main {
     display:block;
     filter:brightness(0.5) grayscale(1);
 }
+/* main-top 반응형 */
 
+@media  screen and (max-width: 768px) {
+    .maintop p {
+        width:500%;
+        font-size:3vh;
+    }
+}
 
 
 /* main-intro */
@@ -442,6 +453,7 @@ main {
         width:95%;
         height:50%;
         overflow: auto;
+        scrollbar-width: none;
         /* border:1px solid white; */
     }
 }
@@ -1663,6 +1675,15 @@ main {
         width:90%;
         height:100vh;
         /* border:1px solid white; */
+    }
+
+    .sugg-innertext p {
+        font-size: 0.8rem;;
+        width:100%;
+    }
+    .sugg-innertext a {
+        font-size:1rem;
+        margin:10px auto;
     }
     
     .sugg-01>div {
