@@ -742,8 +742,8 @@ main {
     width:30vw;
     min-width: 350px;
     height:30vh;
-    border:1px solid rgba(255,255,255,0.3);
-    /* background-color: rgba(255,255,255,0.3); */
+    /* border:1px solid rgba(255,255,255,0.3); */
+    background-color: rgba(0,0,0,0.3);
     text-align: center;
     position: relative;
     transition: 0.8s;
@@ -803,8 +803,8 @@ main {
     width:30vw;
     min-width: 350px;
     height:30vh;
-    border:1px solid rgba(255,255,255,0.3);
-    /* background-color: rgba(255,255,255,0.3); */
+    /* border:1px solid rgba(255,255,255,0.3); */
+    background-color: rgba(0,0,0,0.3);
     text-align: center;
     position:relative;
     transition: 0.8s;
@@ -922,7 +922,8 @@ main {
     height:100%;
     display:block;
     transition: 0.8s;
-    border:1px solid rgba(255,255,255,0.3);
+    /* border:1px solid rgba(255,255,255,0.3); */
+    background: rgba(0,0,0,0.3);
 }
 
 .table-big {
@@ -1011,6 +1012,13 @@ main {
         gap:3%;
         flex-direction: column;
     }
+    .table-big a, .chair-big a {
+        align-content: center;
+    }
+    .table-big a img, .chair-big a img {
+        height:70%;
+        /* border:1px solid red; */
+    }
 }
 /* ---- */
 
@@ -1068,9 +1076,9 @@ main {
 
 .lamp-big>div {
     overflow: hidden;
-    background:rgba(0,0,0,0.8);
+    background:rgba(0,0,0,0.3);
     padding:5px;
-    border:1px solid rgba(255,255,255,0.3);
+    /* border:1px solid rgba(255,255,255,0.3); */
     transition: all 0.8s;
 }
 .lamp-big>div>a {
@@ -1187,6 +1195,9 @@ main {
         right:5px;
         
     }
+    .lamp-desk img {
+        transform: translateX(-25%);
+    }
 }
 /* ---- */
 
@@ -1247,8 +1258,8 @@ main {
 .bedding-con {
     width:32%;
     height:100%;
-    border:1px solid rgba(255,255,255, 0.3);
-    
+    /* border:1px solid rgba(255,255,255, 0.3); */
+    background:rgba(0,0,0,0.3);
 }
 
 
@@ -1379,9 +1390,10 @@ main {
     position: relative;
     padding:10px;
     transition: 0.8s;
-    border:1px solid rgba(255,255,255, 0.3);
+    /* border:1px solid rgba(255,255,255, 0.3); */
+    background: rgba(0,0,0,0.3);
     overflow: hidden;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    /* box-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
 }
 .article-big>div>a h3 {
     position: absolute;
@@ -1392,8 +1404,8 @@ main {
     color:#e4e7eb;
     font-family: "pretendard-b";
     z-index: 13;
-    text-shadow: 0 0 3px rgba(0,0,0,0.5);
-    font-size: 1.8rem;
+    /* text-shadow: 0 0 3px rgba(0,0,0,0.5); */
+    font-size: 4vh;
     transition:0.8s;
     
 }
@@ -1432,7 +1444,7 @@ main {
     }
     
     .article-big>div>a h3 {
-        font-size: 3vh;
+        font-size: 4vw;
         
     }
 }
@@ -1474,7 +1486,7 @@ main {
     width:100%;
     text-align: center;
     transform: translateX(-50%);
-    font-size: 1.3vw;
+    font-size: 2.5vh;
     color:#cbd2d9;
     font-family: "pretendard-l";
     font-weight: normal;
@@ -1669,7 +1681,8 @@ main {
     }
     
     .subtitle-06 {
-        font-size:2.5vh;
+        font-size:2vh;
+        white-space: pre;
     }
     .sugg-01 {
         width:90%;
@@ -1682,7 +1695,9 @@ main {
         width:100%;
     }
     .sugg-innertext a {
-        font-size:1rem;
+        font-size:0.8rem;
+        width:80%;
+        padding:10px;
         margin:10px auto;
     }
     
@@ -1696,7 +1711,8 @@ main {
         width:80%;
     }
     .sugg-02 p {
-        width:90%;
+        width:95%;
+        font-size:3.4vw;
     }
     .sugg-02 a {
         width:40vw;
@@ -1801,7 +1817,7 @@ main {
     height:100%;
     display:block;
     align-content: center;
-    font-family: "pretendard-b";
+    font-family: "pretendard-l";
     color:#fcfcfd;
 }
 .con7-banneritem a img {
@@ -1857,7 +1873,7 @@ main {
     .con7-banneritem a p {
         margin:0 auto;
         width:40%;
-        font-size: 3.5vh;
+        font-size: 2vh;
         /* border:1px solid red; */
         text-align: center;
     }
@@ -2117,6 +2133,13 @@ footer {
     /* border:1px solid red; */
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.kakaohide {
+    visibility: collapse;
+    opacity: 0;
 }
 .kakao img {
     display:block;

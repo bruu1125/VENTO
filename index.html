@@ -320,16 +320,15 @@
                     <div class="cont6-inner-bgbox"></div>
                     <div data-aos="fade-down" data-aos-duration="1200"   class="con6-titlebox">
                         <h1 class="title-06">EXCLUSIVE</h1>
-                        <h2 class="subtitle-06">
-                            당신의 공간에 걸맞는 품격있는 스타일링을 제안합니다.
-                        </h2>
+                        <h2 class="subtitle-06">당신의 공간에 걸맞는
+품격있는 스타일링을 제안합니다.</h2>
                     </div>
                     <div class="sugg-01">
                         <div data-aos="fade-right" data-aos-duration="1200"  class="sugg-inner01">
                             <h2 class="sugg-inner-sub">Renovating</h2>
                             <img src="image/suggest03.jpg" alt="">
                             <div class="sugg-innertext">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repellat nostrum facere enim praesentium eligendi, at vitae dicta dolor eaque deleniti dolore ipsam inventore perspiciatis tempora? Quod minus optio totam.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a>VIEW MORE</a>
                             </div>
                         </div>
@@ -337,7 +336,7 @@
                             <img src="image/suggest01.jpg" alt="">
                             <h2 class="sugg-inner-sub">Interior design</h2>
                             <div class="sugg-innertext">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repellat nostrum facere enim praesentium eligendi, at vitae dicta dolor eaque deleniti dolore ipsam inventore perspiciatis tempora? Quod minus optio totam.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a>VIEW MORE</a>
                             </div>
                         </div>
@@ -345,7 +344,7 @@
                             <h2 class="sugg-inner-sub">Home styling</h2>
                             <img src="image/suggest02.jpg" alt="">
                             <div class="sugg-innertext">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repellat nostrum facere enim praesentium eligendi, at vitae dicta dolor eaque deleniti dolore ipsam inventore perspiciatis tempora? Quod minus optio totam.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a>VIEW MORE</a>
                             </div>
                         </div>
@@ -485,19 +484,13 @@
         window.addEventListener('scroll',function(){
             let value = window.scrollY;
             console.log(value);
-
-            if(value > 1800) {
-                document.querySelector('.navbox').classList.add('navbox-opa');
-            } 
-            // if(value < 1700 || value > 7400) 
-            else{
-                document.querySelector('.navbox').classList.remove('navbox-opa');
-            }
+        if (value > 7500) {
+            document.querySelector('.kakao').classList.add('kakaohide');
+        } else {
+            document.querySelector('.kakao').classList.remove('kakaohide');
+        }
+            
         })
-
-        
-
-
     </script>
 </body>
 </html>
